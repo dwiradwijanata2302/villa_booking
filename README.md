@@ -6,8 +6,8 @@ API yang dikembangkan dapat melakukan operasi GET, POST, PUT, dan DELETE terhada
 Data disimpan dalam database SQLite dan akses ke API diamankan dengan API key yang ditanam langsung dalam kelas Main. Pengujian API dilakukan menggunakan Aplikasi Postman, dan dokumentasi lengkap termasuk endpoint serta tangkapan layar hasil pengujian disertakan dalam file README.md.
 
 ## Tentang Kelompok Kami ##
-Dwira
-Aan
+2405551051 I Made Dwira Dwijanata  
+2405551020 I Komang Anugrah Kusuma Sena Andika  
 2405551077 Gideon Kristian Suharman  
 Davrian
 
