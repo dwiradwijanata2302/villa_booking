@@ -190,13 +190,22 @@ public class CustomerController {
             review.title = (String) body.get("title");
             review.content = (String) body.get("content");
             // TODO: add insertReview in repository
+            CustomerRepository.insertReview(review);
+
             res.setBody("{\"message\": \"Review submitted\"}");
             res.send(201);
         } catch (ClassCastException | NullPointerException e) {
             res.setBody("{\"error\": \"Invalid input: " + e.getMessage() + "\"}");
             res.send(400);
+        } catch (SQLException e) {
+            System.err.println("Database error: " + e.getMessage());
+            e.printStackTrace();
+            res.setBody("{\"error\": \"Database error: " + e.getMessage() + "\"}");
+            res.send(500);
         } catch (Exception e) {
-            res.setBody("{\"error\": \"Unexpected server error\"}");
+            System.err.println("Unexpected error: " + e.getMessage());
+            e.printStackTrace();
+            res.setBody("{\"error\": \"Unexpected server error: " + e.getMessage() + "\"}");
             res.send(500);
         }
     }

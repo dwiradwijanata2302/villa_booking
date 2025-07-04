@@ -130,4 +130,29 @@ public class CustomerRepository {
             stmt.executeUpdate();
         }
     }
+
+    public static void insertReview(Review review) throws SQLException {
+        String query = "INSERT INTO reviews (booking, star, title, content) VALUES (?, ?, ?, ?)";
+
+        try (Connection conn = Database.getConnection(); PreparedStatement stmt = conn.prepareStatement(query)) {
+
+
+            stmt.setInt(1, review.booking);
+            stmt.setInt(2, review.star);
+            stmt.setString(3, review.title);
+            stmt.setString(4, review.content);
+
+            int rowsAffected = stmt.executeUpdate();
+
+            // Debug: print hasil
+            System.out.println("Rows affected: " + rowsAffected);
+            System.out.println("Review inserted for booking: " + review.booking);
+
+
+        } catch (SQLException e) {
+            System.err.println("Error inserting review: " + e.getMessage());
+            e.printStackTrace();
+            throw e;
+        }
+    }
 }
