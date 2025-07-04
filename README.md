@@ -130,30 +130,102 @@ Import file collection Postman atau buat request manual dengan metode, URL, dan 
 
 ### Endpoint Villa
 
-`GET /villas` - Melihat Daftar Semua Vila 
+`GET /villas` - Melihat Daftar Semua Villa
+
+![Image](https://github.com/user-attachments/assets/e8e78065-a66e-4403-bd99-31d1aadef020)
+
+Gambar diatas merupakan contoh implemantasi dimana menampilkan **seluruh villa**
+
+---
 
 `GET /villas/{id}` – Melihat Informasi detail suatu vila
 
+![Image](https://github.com/user-attachments/assets/015cffb2-7ca6-495e-a242-dbdb32ffe374)
+
+Gambar diatas merupakan contoh implemantasi dimana menampilkan villa dengan **id 1**
+
+---
+
 `GET /villas/{id}/rooms` – Melihat Informasi kamar suatu vila, lengkap dengan fasilitas dan harga
+
+![Image](https://github.com/user-attachments/assets/0a2355b2-2e4c-499b-a3f7-04d73081a3ba)
+
+Gambar diatas merupakan contoh implemantasi dimana menampilkan villa dengan **id 1** lengkap dengan **fasilitas** dan **harga**
+
+---
 
 `GET /villas/{id}/bookings` – Melihat Daftar semua booking pada suatu vila
 
+![Image](https://github.com/user-attachments/assets/964da655-c2eb-400b-b82c-983acf3f0500)
+
+Gambar diatas merupakan contoh implemantasi dimana menampilkan daftar **semua booking** pada suatu vila
+
+---
+
 `GET /villas/{id}/reviews` - Melihat Daftar semua review pada suatu vila
 
-`GET /villas?ci_date={checkin_date}&co_date={checkout_date}` – Melihat Pencarian ketersediaan vila berdasarkan tanggal check-in dan 
+![Image](https://github.com/user-attachments/assets/0bf731ac-0453-45a7-9e3b-e827e3d6bddf)
+
+Gambar diatas merupakan contoh implemantasi dimana menampilkan daftar **semua review** pada suatu vila , pada gambar menampilkan review pada villa dengan **id 1**
+
+---
+
+`GET /villas/available?/checkin=YYYY-MM-DD&checkout=YYYY-MM-DD` – Melihat Pencarian ketersediaan vila berdasarkan tanggal check-in dan 
 checkout.
 
-`POST /villas` – Menambahkan data vila  
+![Image](https://github.com/user-attachments/assets/02e56873-6ba4-4992-98dd-fff0dc15fc78)
 
-`POST /villas/{id}/rooms` – Menambahkan tipe kamar pada vila 
+Gambar diatas merupakan contoh implemantasi dimana menampilkan ketersediaan vila berdasarkan tanggal check-in dan checkout. Pada Gambar Villa dengan id 1 tidak ditampilkan karena sudah Full book ( booking pada id kamar yang sama pada villa yang sama sudah sejumlah ketersediaan atau quantity dari type kamar tersebut)
 
-`PUT /villas/{id}` – Mengubah data suatu vila 
+---
 
-`PUT /villas/{id}/rooms/{id}` – Mengubah informasi kamar suatu vila 
+`POST /villas` – Menambahkan data vila
 
-`DELETE /villas/{id}/rooms/{id}` – Menghapus kamar suatu vila 
+![Image](https://github.com/user-attachments/assets/0e580bc3-4ea7-476c-a6d5-965dce9fa904)
 
-`DELETE /villas/{id}` – Menghapus data suatu vila 
+Gambar diatas merupakan contoh implemantasi dimana menambahkan data pada vila
+
+---
+
+`POST /villas/{id}/rooms` – Menambahkan tipe kamar pada vila
+
+![Image](https://github.com/user-attachments/assets/556d306e-1e18-47f2-b115-68dd7599f6e7)
+
+Gambar diatas merupakan contoh implemantasi dimana menambahkan **tipe kamar** (room_types) pada suatu villa
+
+---
+
+`PUT /villas/{id}` – Mengubah data suatu vila
+
+![Image](https://github.com/user-attachments/assets/51cdd229-384c-4e30-8887-9d05b1ba350f)
+
+Gambar diatas merupakan contoh implemantasi dimana mengubah data pada suatu villa
+
+---
+
+`PUT /villas/{id}/rooms/{id}` – Mengubah informasi kamar suatu vila
+
+![Image](https://github.com/user-attachments/assets/9b39c879-33f2-4d59-8643-494e5b47cd81)
+
+Gambar diatas merupakan contoh implemantasi dimana mengubah informasi kamar suatu villa, pada gambar perubahan dilakukan untuk villa dengan id 2 dan room types 4 melakukan perubahan quantity dari sebelumnya 2 menjadi 1
+
+---
+
+`DELETE /villas/{id}/rooms/{id}` – Menghapus kamar suatu vila
+
+![Image](https://github.com/user-attachments/assets/455cb431-6576-462f-bc13-82bcbaa75333)
+
+Gambar diatas merupakan contoh implemantasi dimana menghapus kamar suatu villa, pada gambar kamar dari villa dengan id 2 dan id rooms 4 dihapus
+
+---
+
+`DELETE /villas/{id}` – Menghapus data suatu vila
+
+![Image](https://github.com/user-attachments/assets/82b9c406-8982-4b7f-9c40-24d136ec6946)
+
+Gambar diatas merupakan contoh implemantasi dimana menghapus suatu villa, pada gambar villa dengan id 6 berhasil dihapus
+
+---
 
 ### Endpoint Customer
 
