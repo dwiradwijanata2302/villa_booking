@@ -130,7 +130,7 @@ Import file collection Postman atau buat request manual dengan metode, URL, dan 
 
 ### Endpoint Villa
 
-`GET /villas` - Melihat Daftar Semua Villa
+**`GET /villas` - Melihat Daftar Semua Villa**
 
 ![Image](https://github.com/user-attachments/assets/e8e78065-a66e-4403-bd99-31d1aadef020)
 
@@ -138,7 +138,7 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan **seluruh villa*
 
 ---
 
-`GET /villas/{id}` – Melihat Informasi detail suatu vila
+**`GET /villas/{id}` – Melihat Informasi detail suatu vila**
 
 ![Image](https://github.com/user-attachments/assets/015cffb2-7ca6-495e-a242-dbdb32ffe374)
 
@@ -146,7 +146,7 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan villa dengan **id
 
 ---
 
-`GET /villas/{id}/rooms` – Melihat Informasi kamar suatu vila, lengkap dengan fasilitas dan harga
+**`GET /villas/{id}/rooms` – Melihat Informasi kamar suatu vila, lengkap dengan fasilitas dan harga**
 
 ![Image](https://github.com/user-attachments/assets/0a2355b2-2e4c-499b-a3f7-04d73081a3ba)
 
@@ -154,7 +154,7 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan villa dengan **id
 
 ---
 
-`GET /villas/{id}/bookings` – Melihat Daftar semua booking pada suatu vila
+**`GET /villas/{id}/bookings` – Melihat Daftar semua booking pada suatu vila**
 
 ![Image](https://github.com/user-attachments/assets/964da655-c2eb-400b-b82c-983acf3f0500)
 
@@ -162,7 +162,7 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan daftar **semua bo
 
 ---
 
-`GET /villas/{id}/reviews` - Melihat Daftar semua review pada suatu vila
+**`GET /villas/{id}/reviews` - Melihat Daftar semua review pada suatu vila**
 
 ![Image](https://github.com/user-attachments/assets/0bf731ac-0453-45a7-9e3b-e827e3d6bddf)
 
@@ -170,8 +170,8 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan daftar **semua re
 
 ---
 
-`GET /villas/available?/checkin=YYYY-MM-DD&checkout=YYYY-MM-DD` – Melihat Pencarian ketersediaan vila berdasarkan tanggal check-in dan 
-checkout.
+**`GET /villas/available?/checkin=YYYY-MM-DD&checkout=YYYY-MM-DD` – Melihat Pencarian ketersediaan vila berdasarkan tanggal check-in dan 
+checkout.**
 
 ![Image](https://github.com/user-attachments/assets/02e56873-6ba4-4992-98dd-fff0dc15fc78)
 
@@ -179,7 +179,7 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan ketersediaan vila
 
 ---
 
-`POST /villas` – Menambahkan data vila
+**`POST /villas` – Menambahkan data vila**
 
 ![Image](https://github.com/user-attachments/assets/0e580bc3-4ea7-476c-a6d5-965dce9fa904)
 
@@ -187,7 +187,7 @@ Gambar diatas merupakan contoh implemantasi dimana menambahkan data pada vila
 
 ---
 
-`POST /villas/{id}/rooms` – Menambahkan tipe kamar pada vila
+**`POST /villas/{id}/rooms` – Menambahkan tipe kamar pada vila**
 
 ![Image](https://github.com/user-attachments/assets/556d306e-1e18-47f2-b115-68dd7599f6e7)
 
@@ -195,7 +195,7 @@ Gambar diatas merupakan contoh implemantasi dimana menambahkan **tipe kamar** (r
 
 ---
 
-`PUT /villas/{id}` – Mengubah data suatu vila
+**`PUT /villas/{id}` – Mengubah data suatu vila**
 
 ![Image](https://github.com/user-attachments/assets/51cdd229-384c-4e30-8887-9d05b1ba350f)
 
@@ -203,7 +203,7 @@ Gambar diatas merupakan contoh implemantasi dimana mengubah data pada suatu vil
 
 ---
 
-`PUT /villas/{id}/rooms/{id}` – Mengubah informasi kamar suatu vila
+**`PUT /villas/{id}/rooms/{id}` – Mengubah informasi kamar suatu vila**
 
 ![Image](https://github.com/user-attachments/assets/9b39c879-33f2-4d59-8643-494e5b47cd81)
 
@@ -211,7 +211,7 @@ Gambar diatas merupakan contoh implemantasi dimana mengubah informasi kamar suat
 
 ---
 
-`DELETE /villas/{id}/rooms/{id}` – Menghapus kamar suatu vila
+**`DELETE /villas/{id}/rooms/{id}` – Menghapus kamar suatu vila**
 
 ![Image](https://github.com/user-attachments/assets/455cb431-6576-462f-bc13-82bcbaa75333)
 
@@ -219,7 +219,7 @@ Gambar diatas merupakan contoh implemantasi dimana menghapus kamar suatu villa, 
 
 ---
 
-`DELETE /villas/{id}` – Menghapus data suatu vila
+**`DELETE /villas/{id}` – Menghapus data suatu vila**
 
 ![Image](https://github.com/user-attachments/assets/82b9c406-8982-4b7f-9c40-24d136ec6946)
 
@@ -229,30 +229,108 @@ Gambar diatas merupakan contoh implemantasi dimana menghapus suatu villa, pada g
 
 ### Endpoint Customer
 
-`GET /customers` - Melihat Daftar semua customer 
+**`GET /customers` - Melihat Daftar semua customer **
 
-`GET /customers/{id}` - Melihat Informasi detail seorang customer 
+![Image](https://github.com/user-attachments/assets/b55fe478-6b56-4f74-a355-d505bc7e04ac)
 
-`GET /customers/{id}/bookings` - Melihat Daftar booking yang telah dilakukan oleh seorang customer 
+Gambar diatas merupakan contoh implemantasi dimana melihat daftar **semua customer**
 
-`GET /customers/{id}/reviews` - Melihat Daftar ulasan yang telah diberikan oleh customer 
+---
 
-`POST /villas` – Menambahkan Menambahkan customer baru (registrasi customer) 
+**`GET /customers/{id}` - Melihat Informasi detail seorang customer**
 
-`POST /villas` – Menambahkan Customer melakukan pemesanan vila
+![Image](https://github.com/user-attachments/assets/e162ffd2-b636-4496-9a6e-fef74f639d80)
 
-`POST /villas` – Menambahkan Customer memberikan ulasan pada vila (berdasarkan informasi booking)
+Gambar diatas merupakan contoh implemantasi dimana melihat daftar customer dengan **id 3**
 
-`PUT /villas/{id}/rooms/{id}` – Mengubah data seorang customer 
+---
+
+**`GET /customers/{id}/bookings` - Melihat Daftar booking yang telah dilakukan oleh seorang customer** 
+
+![Image](https://github.com/user-attachments/assets/e79f1fad-ff36-4c38-8919-79bb94f23202)
+
+Gambar diatas merupakan contoh implemantasi dimana melihat daftar booking yang telah dilakukan oleh seorang customer, pada gambar menampilkan booking yang dilakukan oleh customer dengan id 3
+
+---
+
+**`GET /customers/{id}/reviews` - Melihat Daftar ulasan yang telah diberikan oleh customer**
+
+![Image](https://github.com/user-attachments/assets/9e4aa478-763d-4707-8595-7e4d308a68f1)
+
+Gambar diatas merupakan contoh implemantasi dimana melihat daftar ulasan yang diberikan oleh customer, pada gambar terlihat daftar ulasan customer dengan id 3
+
+---
+
+**`POST /customers` – Menambahkan Menambahkan customer baru (registrasi customer)** 
+
+![Image](https://github.com/user-attachments/assets/4c3b1c55-910b-4376-8bae-10f0aa66083d)
+
+Gambar diatas merupakan contoh implemantasi dimana menambahkan customer baru (registrasi customer), dengan memasukkan nama email dan nomor telepon berformat string
+
+---
+
+**`POST /customers/{id}/bookings` – Menambahkan Customer melakukan pemesanan vila**
+
+![Image](https://github.com/user-attachments/assets/a196a984-1c10-4737-9c4a-ea4b1f216ef2)
+
+Gambar diatas merupakan contoh implemantasi dimana menambahkan customer melakukan pemesanan villa, customer memilih room type lalu tanggal check in dan check out, lalu bisa menggunakan voucher jika sedang ada voucher berlaku dan payment status yang bisa dilunaskan saat reservasi atau tidak , dan jika tidak payment status akan berupa waiting , dan apabila tidak membayar akan tertulis failed
+
+---
+
+**`POST /customers/{id}/bookings/{id}/reviews ` – Menambahkan Customer yang akan memberikan ulasan pada vila (berdasarkan informasi booking)**
+
+![Image](https://github.com/user-attachments/assets/41090f0c-ddf6-43a7-b9f5-e13667b396d1)
+
+Gambar diatas merupakan contoh implemantasi dimana menambahkan customer yang akan memberikan ulasan pada vila (berdasarkan informasi booking)
+
+---
+
+**`PUT /customers/{id} ` – Mengubah data seorang customer** 
+
+![Image](https://github.com/user-attachments/assets/a3c3b5a3-b8d7-4b5f-9a75-8977a1e0313a)
+
+Gambar diatas merupakan contoh implemantasi dimana mengubah data seorang customer, perubahan nama email dan nomor telepon bisa dilakukan
+
+---
 
 ### Endpoint Voucher
 
-`GET /vouchers` - Melihat Daftar semua voucher  
+**`GET /vouchers` - Melihat Daftar semua voucher**
 
-`GET /vouchers/{id}` - Melihat Informasi detail suatu voucher 
 
-`POST /vouchers` – Menambahkan voucher baru
 
-`PUT /vouchers/{id}` – Mengubah data suatu voucher 
+Gambar diatas merupakan contoh implemantasi dimana 
 
-`DELETE /vouchers/{id}` – Menghapus data suatu voucher
+---
+
+**`GET /vouchers/{id}` - Melihat Informasi detail suatu voucher**
+
+
+
+Gambar diatas merupakan contoh implemantasi dimana 
+
+---
+
+**`POST /vouchers` – Menambahkan voucher baru**
+
+
+
+Gambar diatas merupakan contoh implemantasi dimana 
+
+---
+
+**`PUT /vouchers/{id}` – Mengubah data suatu voucher**
+
+
+
+Gambar diatas merupakan contoh implemantasi dimana 
+
+---
+
+**`DELETE /vouchers/{id}` – Menghapus data suatu voucher**
+
+
+
+Gambar diatas merupakan contoh implemantasi dimana 
+
+---
