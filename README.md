@@ -86,7 +86,7 @@ src/villa_booking
   - [Autentikasi API](#autentikasi-api)
   - [Menjalankan via Postman](#menjalankan-via-postman)
 - [Fitur API](#fitur-api)
-  - [Endpoint Villa](#endpoint-villa)
+  - [Endpoint Villa](#`GET-/villas`)
     - [Daftar semua vila](#melihat-daftar-vila)
     - [Informasi detail suatu vila](#melihat-detail-dan-kamar-vila)
     - [Informasi kamar suatu vila, lengkap dengan fasilitas dan harga](#melihat-booking-dan-review-vila)
@@ -130,30 +130,30 @@ Import file collection Postman atau buat request manual dengan metode, URL, dan 
 
 ### Endpoint Villa
 
-`GET /villas` - Melihat Daftar Semua Vila 
+#### `GET /villas` - Melihat Daftar Semua Vila 
 
-`GET /villas/{id}` – Melihat Informasi detail suatu vila
+#### `GET /villas/{id}` – Melihat Informasi detail suatu vila
 
-`GET /villas/{id}/rooms` – Melihat Informasi kamar suatu vila, lengkap dengan fasilitas dan harga
+#### `GET /villas/{id}/rooms` – Melihat Informasi kamar suatu vila, lengkap dengan fasilitas dan harga
 
-`GET /villas/{id}/bookings` – Melihat Daftar semua booking pada suatu vila
+#### `GET /villas/{id}/bookings` – Melihat Daftar semua booking pada suatu vila
 
-`GET /villas/{id}/reviews` - Melihat Daftar semua review pada suatu vila
+#### `GET /villas/{id}/reviews` - Melihat Daftar semua review pada suatu vila
 
-`GET /villas?ci_date={checkin_date}&co_date={checkout_date}` – Melihat Pencarian ketersediaan vila berdasarkan tanggal check-in dan 
+#### `GET /villas?ci_date={checkin_date}&co_date={checkout_date}` – Melihat Pencarian ketersediaan vila berdasarkan tanggal check-in dan 
 checkout.
 
-`POST /villas` – Menambahkan data vila  
+#### `POST /villas` – Menambahkan data vila  
 
-`POST /villas/{id}/rooms` – Menambahkan tipe kamar pada vila 
+#### `POST /villas/{id}/rooms` – Menambahkan tipe kamar pada vila 
 
-`PUT /villas/{id}` – Mengubah data suatu vila 
+#### `PUT /villas/{id}` – Mengubah data suatu vila 
 
-`PUT /villas/{id}/rooms/{id}` – Mengubah informasi kamar suatu vila 
+#### `PUT /villas/{id}/rooms/{id}` – Mengubah informasi kamar suatu vila 
 
-`DELETE /villas/{id}/rooms/{id}` – Menghapus kamar suatu vila 
+#### `DELETE /villas/{id}/rooms/{id}` – Menghapus kamar suatu vila 
 
-`DELETE /villas/{id}` – Menghapus data suatu vila 
+#### `DELETE /villas/{id}` – Menghapus data suatu vila 
 
 ### Endpoint Customer
 
