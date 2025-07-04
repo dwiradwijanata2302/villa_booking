@@ -130,26 +130,31 @@ Import file collection Postman atau buat request manual dengan metode, URL, dan 
 
 ### Endpoint Villa
 
-### Endpoint Villa
+`GET /villas` - Melihat Daftar Semua Vila 
 
-#### Melihat Daftar Vila
-`GET /villas`  
-Menampilkan semua vila yang tersedia.
+`GET /villas/{id}` – Melihat Informasi detail suatu vila
 
-#### Melihat Detail dan Kamar Vila
-`GET /villas/{id}` – menampilkan informasi vila berdasarkan ID.  
-`GET /villas/{id}/rooms` – menampilkan semua tipe kamar dalam vila.
+`GET /villas/{id}/rooms` – Melihat Informasi kamar suatu vila, lengkap dengan fasilitas dan harga
 
-#### Melihat Booking dan Review Vila
-`GET /villas/{id}/bookings` – daftar booking vila.  
-`GET /villas/{id}/reviews` – ulasan yang pernah diberikan pada vila tersebut.
+`GET /villas/{id}/bookings` – Melihat Daftar semua booking pada suatu vila
 
-#### Menambah Vila dan Kamar
-`POST /villas` – membuat vila baru.  
-`POST /villas/{id}/rooms` – menambahkan kamar ke vila tertentu.
+`GET /villas/{id}/reviews` - Melihat Daftar semua review pada suatu vila
 
-#### Mengubah dan Menghapus Vila/Kamar
-`PUT /villas/{id}` – memperbarui data vila.  
-`PUT /villas/{id}/rooms/{id}` – memperbarui tipe kamar.  
-`DELETE /villas/{id}/rooms/{id}` – menghapus kamar tertentu.  
-`DELETE /villas/{id}` – menghapus vila.
+`GET /villas?ci_date={checkin_date}&co_date={checkout_date}` – Melihat Pencarian ketersediaan vila berdasarkan tanggal check-in dan 
+checkout.
+
+`POST /villas` – Menambahkan data vila  
+
+`POST /villas/{id}/rooms` – Menambahkan tipe kamar pada vila 
+
+`PUT /villas/{id}` – Mengubah data suatu vila 
+
+`PUT /villas/{id}/rooms/{id}` – Mengubah informasi kamar suatu vila 
+
+`DELETE /villas/{id}/rooms/{id}` – Menghapus kamar suatu vila 
+
+`DELETE /villas/{id}` – Menghapus data suatu vila 
+
+### Endpoint Customer
+
+### Endpoint Voucher
