@@ -7,10 +7,10 @@
 ---
 
 ## 👥 Anggota Kelompok
-- I Made Dwira Dwijanata              (2405551051)
-- I Komang Anugrah Kusuma Sena Andika (2405551020)
-- Gideon Kristian Suharman            (2405551077)
--
+- 🧑‍💻 I Made Dwira Dwijanata              (2405551051)  
+- 🧑‍💻 I Komang Anugrah Kusuma Sena Andika (2405551020)  
+- 🧑‍💻 Gideon Kristian Suharman            (2405551077)  
+- 🧑‍💻 
 
 ---
 
@@ -23,12 +23,18 @@ API yang dikembangkan dapat melakukan operasi GET, POST, PUT, dan DELETE terhada
 
 Data disimpan dalam database SQLite dan akses ke API diamankan dengan API key yang ditanam langsung dalam kelas Main. Pengujian API dilakukan menggunakan Aplikasi Postman, dan dokumentasi lengkap termasuk endpoint serta tangkapan layar hasil pengujian disertakan dalam file README.md.
 
-Tujuan kami adalah:
+🎯 **Tujuan Proyek**
 - ✅ Menerapkan prinsip **Object-Oriented Programming**
 - 🧠 Meningkatkan **keterampilan coding** dengan Java
 - 🤝 Bekerja kolaboratif dalam tim
 - 🔐 Menerapkan **autentikasi API key**
 - 📦 Menggunakan **SQLite** sebagai penyimpanan data
+
+💡 **API mendukung method**
+- `GET`, `POST`, `PUT`, `DELETE`
+- Format: `JSON`
+- Validasi input + penanganan error dengan **exception handler**
+- Diuji menggunakan **Postman**
 
 ---
 
@@ -75,9 +81,9 @@ src/villa_booking
 
 📍 Base URL: `http://localhost:PORT/`
 
-### 🏡 **Villa**
+---
 
-## Daftar Isi
+## 🧭 Daftar Isi
 - [API Pemesanan Vila Sederhana Berbasis Java](#-api-pemesanan-vila---pbo-2-2025-)
 - [Tentang Kelompok Kami](#-anggota-kelompok)
 - [Deskripsi Project](#-deskripsi-project)
@@ -115,6 +121,7 @@ src/villa_booking
     - Mengubah data suatu voucher
     - Menghapus data suatu voucher
 
+---
 
 ## Menjalankan Kode Program
 Silakan jalankan project melalui IDE seperti IntelliJ IDEA. Pastikan koneksi ke SQLite sudah benar dan class `Main.java` sudah dikonfigurasi untuk menjalankan server API.
