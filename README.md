@@ -120,6 +120,7 @@ src/villa_booking
     - Membuat voucher baru
     - Mengubah data suatu voucher
     - Menghapus data suatu voucher
+  - Penutup
 
 ---
 
@@ -341,3 +342,12 @@ Gambar diatas merupakan contoh implemantasi dimana
 Gambar diatas merupakan contoh implemantasi dimana 
 
 ---
+
+## 📝 Penutup
+
+Proyek ini merupakan hasil kerja kolaboratif dari tim kami dalam menyelesaikan tugas mata kuliah Pemrograman Berorientasi Objek. Melalui pengembangan API ini, kami telah belajar bagaimana menerapkan prinsip-prinsip OOP dalam konteks nyata, mulai dari pengelolaan entitas, routing, hingga validasi dan penanganan error.
+
+Kami berharap proyek ini dapat menjadi referensi dan pembelajaran, tidak hanya bagi tim kami, namun juga untuk teman-teman yang sedang belajar membangun API berbasis Java. Terima kasih telah meluangkan waktu untuk melihat repositori ini 🙏
+
+Jika kamu menyukai proyek ini, jangan lupa ⭐ dan fork!  
+Semoga bermanfaat dan sampai jumpa di proyek berikutnya 🚀
