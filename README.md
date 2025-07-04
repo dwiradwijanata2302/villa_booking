@@ -86,34 +86,34 @@ src/villa_booking
   - [Autentikasi API](#autentikasi-api)
   - [Menjalankan via Postman](#menjalankan-via-postman)
 - [Fitur API](#fitur-api)
-  - [Endpoint Villa](#`GET-/villas`)
-    - [Daftar semua vila](#melihat-daftar-vila)
-    - [Informasi detail suatu vila](#melihat-detail-dan-kamar-vila)
-    - [Informasi kamar suatu vila, lengkap dengan fasilitas dan harga](#melihat-booking-dan-review-vila)
-    - [Daftar semua booking pada suatu vila](#menambah-vila-dan-kamar)
-    - [Daftar semua review pada suatu vila](#mengubah-dan-menghapus-vilakamar)
-    - [Pencarian ketersediaan vila berdasarkan tanggal check-in dan checkout. ](#mengubah-dan-menghapus-vilakamar)
-    - [Menambahkan data vila](#mengubah-dan-menghapus-vilakamar)
-    - [Menambahkan tipe kamar pada vila](#mengubah-dan-menghapus-vilakamar)
-    - [Mengubah data suatu vila](#mengubah-dan-menghapus-vilakamar)
-    - [Mengubah informasi kamar suatu vila](#mengubah-dan-menghapus-vilakamar)
-    - [Menghapus kamar suatu vila](#mengubah-dan-menghapus-vilakamar)
-    - [Menghapus data suatu vila](#mengubah-dan-menghapus-vilakamar)
-  - [Endpoint Customer](#endpoint-villa)
-    - [Daftar semua customer ](#melihat-daftar-vila)
-    - [Informasi detail seorang customer](#mengubah-dan-menghapus-vilakamar)
-    - [Daftar booking yang telah dilakukan oleh seorang customer](#mengubah-dan-menghapus-vilakamar)
-    - [Daftar ulasan yang telah diberikan oleh customer](#mengubah-dan-menghapus-vilakamar)
-    - [Menambahkan customer baru (registrasi customer)](#mengubah-dan-menghapus-vilakamar)
-    - [Customer melakukan pemesanan vila](#mengubah-dan-menghapus-vilakamar)
-    - [Customer memberikan ulasan pada vila (berdasarkan informasi booking)](#mengubah-dan-menghapus-vilakamar)
-    - [Mengubah data seorang customer](#mengubah-dan-menghapus-vilakamar)
-  - [Endpoint Voucher](#endpoint-villa)
-    - [Daftar semua voucher](#mengubah-dan-menghapus-vilakamar)
-    - [Informasi detail suatu voucher](#mengubah-dan-menghapus-vilakamar)
-    - [Membuat voucher baru](#mengubah-dan-menghapus-vilakamar)
-    - [Mengubah data suatu voucher](#mengubah-dan-menghapus-vilakamar)
-    - [Menghapus data suatu voucher](#mengubah-dan-menghapus-vilakamar)
+  - [Endpoint Villa](#endpoint-villa)
+    - Daftar semua vila
+    - Informasi detail suatu vila
+    - Informasi kamar suatu vila, lengkap dengan fasilitas dan harga
+    - Daftar semua booking pada suatu vila
+    - Daftar semua review pada suatu vila
+    - Pencarian ketersediaan vila berdasarkan tanggal check-in dan checkout
+    - Menambahkan data vila
+    - Menambahkan tipe kamar pada vila
+    - Mengubah data suatu vila
+    - Mengubah informasi kamar suatu vila
+    - Menghapus kamar suatu vila
+    - Menghapus data suatu vila
+  - [Endpoint Customer](#endpoint-customer)
+    - Daftar semua customer
+    - Informasi detail seorang customer
+    - Daftar booking yang telah dilakukan oleh seorang customer
+    - Daftar ulasan yang telah diberikan oleh customer
+    - Menambahkan customer baru (registrasi customer)
+    - Customer melakukan pemesanan vila
+    - Customer memberikan ulasan pada vila (berdasarkan informasi booking)
+    - Mengubah data seorang customer
+  - [Endpoint Voucher](#endpoint-voucher)
+    - Daftar semua voucher
+    - Informasi detail suatu voucher
+    - Membuat voucher baru
+    - Mengubah data suatu voucher
+    - Menghapus data suatu voucher
 
 
 ## Menjalankan Kode Program
@@ -130,31 +130,57 @@ Import file collection Postman atau buat request manual dengan metode, URL, dan 
 
 ### Endpoint Villa
 
-#### `GET /villas` - Melihat Daftar Semua Vila 
+`GET /villas` - Melihat Daftar Semua Vila 
 
-#### `GET /villas/{id}` – Melihat Informasi detail suatu vila
+`GET /villas/{id}` – Melihat Informasi detail suatu vila
 
-#### `GET /villas/{id}/rooms` – Melihat Informasi kamar suatu vila, lengkap dengan fasilitas dan harga
+`GET /villas/{id}/rooms` – Melihat Informasi kamar suatu vila, lengkap dengan fasilitas dan harga
 
-#### `GET /villas/{id}/bookings` – Melihat Daftar semua booking pada suatu vila
+`GET /villas/{id}/bookings` – Melihat Daftar semua booking pada suatu vila
 
-#### `GET /villas/{id}/reviews` - Melihat Daftar semua review pada suatu vila
+`GET /villas/{id}/reviews` - Melihat Daftar semua review pada suatu vila
 
-#### `GET /villas?ci_date={checkin_date}&co_date={checkout_date}` – Melihat Pencarian ketersediaan vila berdasarkan tanggal check-in dan 
+`GET /villas?ci_date={checkin_date}&co_date={checkout_date}` – Melihat Pencarian ketersediaan vila berdasarkan tanggal check-in dan 
 checkout.
 
-#### `POST /villas` – Menambahkan data vila  
+`POST /villas` – Menambahkan data vila  
 
-#### `POST /villas/{id}/rooms` – Menambahkan tipe kamar pada vila 
+`POST /villas/{id}/rooms` – Menambahkan tipe kamar pada vila 
 
-#### `PUT /villas/{id}` – Mengubah data suatu vila 
+`PUT /villas/{id}` – Mengubah data suatu vila 
 
-#### `PUT /villas/{id}/rooms/{id}` – Mengubah informasi kamar suatu vila 
+`PUT /villas/{id}/rooms/{id}` – Mengubah informasi kamar suatu vila 
 
-#### `DELETE /villas/{id}/rooms/{id}` – Menghapus kamar suatu vila 
+`DELETE /villas/{id}/rooms/{id}` – Menghapus kamar suatu vila 
 
-#### `DELETE /villas/{id}` – Menghapus data suatu vila 
+`DELETE /villas/{id}` – Menghapus data suatu vila 
 
 ### Endpoint Customer
 
+`GET /customers` - Melihat Daftar semua customer 
+
+`GET /customers/{id}` - Melihat Informasi detail seorang customer 
+
+`GET /customers/{id}/bookings` - Melihat Daftar booking yang telah dilakukan oleh seorang customer 
+
+`GET /customers/{id}/reviews` - Melihat Daftar ulasan yang telah diberikan oleh customer 
+
+`POST /villas` – Menambahkan Menambahkan customer baru (registrasi customer) 
+
+`POST /villas` – Menambahkan Customer melakukan pemesanan vila
+
+`POST /villas` – Menambahkan Customer memberikan ulasan pada vila (berdasarkan informasi booking)
+
+`PUT /villas/{id}/rooms/{id}` – Mengubah data seorang customer 
+
 ### Endpoint Voucher
+
+`GET /vouchers` - Melihat Daftar semua voucher  
+
+`GET /vouchers/{id}` - Melihat Informasi detail suatu voucher 
+
+`POST /vouchers` – Menambahkan voucher baru
+
+`PUT /vouchers/{id}` – Mengubah data suatu voucher 
+
+`DELETE /vouchers/{id}` – Menghapus data suatu voucher
