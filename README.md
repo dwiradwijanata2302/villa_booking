@@ -78,11 +78,13 @@ src/villa_booking
 ### 🏡 **Villa**
 
 ## Daftar Isi
-- [API Pemesanan Vila Sederhana Berbasis Java](#api-pemesanan-vila-sederhana-berbasis-java)
-- [Tentang Kelompok Kami](#tentang-kelompok-kami)
+- [API Pemesanan Vila Sederhana Berbasis Java](#📌-deskripsi-proyek)
+- [Tentang Kelompok Kami](#👥-anggota-kelompok)
 - [Menjalankan Kode Program](#menjalankan-kode-program)
   - [Autentikasi API](#autentikasi-api)
   - [Menjalankan via Postman](#menjalankan-via-postman)
+- [Fitur API](#fitur-api)
+  - [Endpoint Villa](#endpoint-villa)
 
 
 ## Menjalankan Kode Program
