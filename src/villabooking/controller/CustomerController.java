@@ -3,7 +3,7 @@ package villabooking.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import villabooking.http.Request;
 import villabooking.http.Response;
-import villabooking.model.*;
+import villa_booking.model.*;
 import villabooking.repository.BookingRepository;
 import villabooking.repository.CustomerRepository;
 import villabooking.repository.RoomTypeRepository;
