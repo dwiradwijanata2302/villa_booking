@@ -14,10 +14,10 @@
 
 ---
 
-## 📌 Deskripsi Proyek
+## 📌 Deskripsi Project
 
 Selamat datang di repositori tugas kami! 🎉  
-Proyek ini adalah implementasi **API Pemesanan Vila Sederhana** berbasis **Java**, yang dibangun untuk memenuhi tugas mata kuliah **PBO 2**. Jadi ini merupakan program pengembangan Application Programming Interface (API) untuk sistem pemesanan vila yang dibuat menggunakan bahasa Java dan berbasis konsep Object-Oriented Programming. Tujuan dari proyek ini adalah untuk melatih kemampuan mahasiswa dalam mengimplementasikan prinsip OOP, bekerja secara tim, serta mengembangkan API yang dapat memproses berbagai jenis permintaan HTTP.
+Project ini adalah implementasi **API Pemesanan Vila Sederhana** berbasis **Java**, yang dibangun untuk memenuhi tugas mata kuliah **PBO 2**. Jadi ini merupakan program pengembangan Application Programming Interface (API) untuk sistem pemesanan vila yang dibuat menggunakan bahasa Java dan berbasis konsep Object-Oriented Programming. Tujuan dari proyek ini adalah untuk melatih kemampuan mahasiswa dalam mengimplementasikan prinsip OOP, bekerja secara tim, serta mengembangkan API yang dapat memproses berbagai jenis permintaan HTTP.
 
 API yang dikembangkan dapat melakukan operasi GET, POST, PUT, dan DELETE terhadap entitas seperti villas, customers, dan vouchers. Semua respons dan permintaan diformat dalam bentuk JSON. Sistem juga dilengkapi dengan validasi data, penanganan error dengan konsep exception, serta pemberian respons HTTP yang sesuai seperti 400 Bad Request atau 404 Not Found.
 
@@ -78,13 +78,20 @@ src/villa_booking
 ### 🏡 **Villa**
 
 ## Daftar Isi
-- [API Pemesanan Vila Sederhana Berbasis Java](#-deskripsi-proyek)
+- [API Pemesanan Vila Sederhana Berbasis Java](-api-pemesanan-vila-pbo-2-2025)
 - [Tentang Kelompok Kami](#-anggota-kelompok)
+- [Deskripsi Project](#-deskripsi-project)
+- [Struktur Project](#-struktur-project)  
 - [Menjalankan Kode Program](#menjalankan-kode-program)
   - [Autentikasi API](#autentikasi-api)
   - [Menjalankan via Postman](#menjalankan-via-postman)
 - [Fitur API](#fitur-api)
   - [Endpoint Villa](#endpoint-villa)
+    - [Melihat Daftar Vila](#melihat-daftar-vila)
+    - [Melihat Detail dan Kamar Vila](#melihat-detail-dan-kamar-vila)
+    - [Melihat Booking dan Review Vila](#melihat-booking-dan-review-vila)
+    - [Menambah Vila dan Kamar](#menambah-vila-dan-kamar)
+    - [Mengubah dan Menghapus Vila/Kamar](#mengubah-dan-menghapus-vilakamar)
 
 
 ## Menjalankan Kode Program
@@ -101,3 +108,26 @@ Import file collection Postman atau buat request manual dengan metode, URL, dan 
 
 ### Endpoint Villa
 
+### Endpoint Villa
+
+#### Melihat Daftar Vila
+`GET /villas`  
+Menampilkan semua vila yang tersedia.
+
+#### Melihat Detail dan Kamar Vila
+`GET /villas/{id}` – menampilkan informasi vila berdasarkan ID.  
+`GET /villas/{id}/rooms` – menampilkan semua tipe kamar dalam vila.
+
+#### Melihat Booking dan Review Vila
+`GET /villas/{id}/bookings` – daftar booking vila.  
+`GET /villas/{id}/reviews` – ulasan yang pernah diberikan pada vila tersebut.
+
+#### Menambah Vila dan Kamar
+`POST /villas` – membuat vila baru.  
+`POST /villas/{id}/rooms` – menambahkan kamar ke vila tertentu.
+
+#### Mengubah dan Menghapus Vila/Kamar
+`PUT /villas/{id}` – memperbarui data vila.  
+`PUT /villas/{id}/rooms/{id}` – memperbarui tipe kamar.  
+`DELETE /villas/{id}/rooms/{id}` – menghapus kamar tertentu.  
+`DELETE /villas/{id}` – menghapus vila.
