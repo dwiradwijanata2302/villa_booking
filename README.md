@@ -305,17 +305,18 @@ Gambar diatas merupakan contoh implemantasi dimana mengubah data seorang custome
 
 **`GET /vouchers` - Melihat Daftar semua voucher**
 
+<img width="1919" height="919" alt="Image" src="https://github.com/user-attachments/assets/b70f03de-9c1f-42e3-9725-ed33688deca2" />
 
-
-Gambar diatas merupakan contoh implemantasi dimana 
+Gambar diatas merupakan contoh implemantasi dimana menampilkan **seluruh voucher**
 
 ---
 
 **`GET /vouchers/{id}` - Melihat Informasi detail suatu voucher**
 
+<img width="1869" height="965" alt="Image" src="https://github.com/user-attachments/assets/16a69f77-43a1-4b6d-9c25-46bb0f76fd9c" />
 
 
-Gambar diatas merupakan contoh implemantasi dimana 
+Gambar diatas merupakan contoh implemantasi dimana menampilkan **voucher** dengan **id 1**
 
 ---
 
