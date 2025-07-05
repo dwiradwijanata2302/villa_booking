@@ -137,12 +137,15 @@ CRUD Operations:
 - CREATE (POST): Membuat data baru (voucher, customer, villa)
 - READ (GET): Mengambil data (semua data atau berdasarkan ID)
 - UPDATE (PUT): Mengubah data yang sudah ada
-- DELETE (DELETE): Menghapus data berdasarkan ID  
+- DELETE (DELETE): Menghapus data berdasarkan ID
+    
 HTTP Methods:  
 - GET - Mengambil data
 - POST - Membuat data baru
 - PUT - Mengupdate data
 - DELETE - Menghapus data
+
+  
 Response Format:  
 - Success Response: JSON dengan data atau pesan sukses
 - Error Response: JSON dengan pesan error dan HTTP status code
