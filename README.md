@@ -23,7 +23,7 @@ API yang dikembangkan dapat melakukan operasi GET, POST, PUT, dan DELETE terhada
 
 Data disimpan dalam database SQLite dan akses ke API diamankan dengan API key yang ditanam langsung dalam kelas Main. Pengujian API dilakukan menggunakan Aplikasi Postman, dan dokumentasi lengkap termasuk endpoint serta tangkapan layar hasil pengujian disertakan dalam file README.md.
 
-🎯 **Tujuan Proyek**
+🎯 **Tujuan Project**
 - ✅ Menerapkan prinsip **Object-Oriented Programming**
 - 🧠 Meningkatkan **keterampilan coding** dengan Java
 - 🤝 Bekerja kolaboratif dalam tim
@@ -124,15 +124,13 @@ src/villa_booking
 
 ---
 
-## Menjalankan Kode Program
+## Menjalankan Kode Program  
+![Screenshot 2025-07-05 152759](https://github.com/user-attachments/assets/1d57af1e-b743-4969-ba50-4f1c17c2c38e)  
+
 Silakan jalankan project melalui IDE seperti IntelliJ IDEA. Pastikan koneksi ke SQLite sudah benar dan class `Main.java` sudah dikonfigurasi untuk menjalankan server API.
 
-### Autentikasi API
-Semua endpoint hanya bisa diakses jika permintaan menyertakan API Key dalam header request. Contoh:
-API key ini sudah ditanam langsung di kelas `Main` dan digunakan sebagai validasi permintaan.
-
 ### Menjalankan via Postman
-Import file collection Postman atau buat request manual dengan metode, URL, dan JSON body sesuai dengan endpoint yang tersedia. Jangan lupa sertakan header `x-api-key`.
+Import file collection Postman atau buat request manual dengan metode, URL, dan JSON body sesuai dengan endpoint yang tersedia.  
 
 ## Fitur API
 
