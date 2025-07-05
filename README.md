@@ -321,6 +321,7 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan **voucher** denga
 ---
 
 **`POST /vouchers` – Menambahkan voucher baru**
+![add voucher](https://github.com/user-attachments/assets/c0a18ba5-17c4-49c3-a8bf-0b8d06912706)
 
 
 
@@ -337,6 +338,7 @@ Gambar diatas merupakan contoh implemantasi dimana
 ---
 
 **`DELETE /vouchers/{id}` – Menghapus data suatu voucher**
+![delete voucher](https://github.com/user-attachments/assets/cc5731fa-1c4a-4eea-9d6a-7c3f20e3b4b1)
 
 
 
