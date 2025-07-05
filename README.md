@@ -197,6 +197,8 @@ checkout.**
 
 ![Image](https://github.com/user-attachments/assets/02e56873-6ba4-4992-98dd-fff0dc15fc78)
 
+![villa get available](https://github.com/user-attachments/assets/5c818d8b-e030-4eb1-a28b-45cadede7084)
+
 Gambar diatas merupakan contoh implemantasi dimana menampilkan ketersediaan vila berdasarkan tanggal check-in dan checkout. Pada Gambar Villa dengan id 1 tidak ditampilkan karena sudah Full book ( booking pada id kamar yang sama pada villa yang sama sudah sejumlah ketersediaan atau quantity dari type kamar tersebut)
 
 ---
