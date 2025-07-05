@@ -330,10 +330,12 @@ Setelah request berhasil dikirim, sistem memberikan response dengan status 201 C
 ---
 
 **`PUT /vouchers/{id}` – Mengubah data suatu voucher**
+![put voucher](https://github.com/user-attachments/assets/ac17c7aa-083d-45c1-87fb-e6c59f674137)
 
 
 
-Gambar diatas merupakan contoh implemantasi dimana 
+Gambar di atas merupakan contoh implementasi untuk mengupdate atau memodifikasi data voucher yang sudah ada dalam sistem. Pada request ini, menggunakan method PUT dengan endpoint http://localhost:8080/vouchers/1 dimana angka 1 menunjukkan ID voucher yang akan diupdate.  
+Setelah request berhasil dieksekusi, sistem memberikan response dengan status 200 OK dan pesan "Voucher updated" yang menandakan data voucher telah berhasil diperbarui dalam database dengan informasi yang baru.  
 
 ---
 
