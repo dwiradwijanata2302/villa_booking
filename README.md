@@ -325,8 +325,8 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan **voucher** denga
 
 
 
-Gambar diatas merupakan contoh implemantasi dimana 
-
+Gambar di atas merupakan contoh implementasi untuk menambahkan voucher baru ke dalam sistem.
+Setelah request berhasil dikirim, sistem memberikan response dengan status 201 Created dan pesan "Voucher created" yang menandakan voucher telah berhasil dibuat.  
 ---
 
 **`PUT /vouchers/{id}` – Mengubah data suatu voucher**
@@ -342,7 +342,7 @@ Gambar diatas merupakan contoh implemantasi dimana
 
 
 
-Gambar diatas merupakan contoh implemantasi dimana 
+Gambar di atas merupakan contoh implementasi untuk menghapus voucher dari sistem. Pada request ini, menggunakan method DELETE dengan endpoint yang menyertakan ID voucher yang akan dihapus (dalam hal ini ID = 1). Setelah request berhasil dieksekusi, sistem memberikan response dengan status 200 OK dan pesan "Voucher deleted" yang menandakan voucher telah berhasil dihapus dari database.  
 
 ---
 
