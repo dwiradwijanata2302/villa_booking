@@ -52,7 +52,7 @@ public class VoucherRepository {
         return null;
     }
 
-    public boolean insertVoucher(Voucher v) {
+    public void insertVoucher(Voucher v) throws SQLException{
         String query = "INSERT INTO vouchers (code, description, discount, start_date, end_date) VALUES (?, ?, ?, ?, ?)";
         try (Connection conn = Database.getConnection(); PreparedStatement stmt = conn.prepareStatement(query)) {
 
@@ -62,10 +62,10 @@ public class VoucherRepository {
             stmt.setString(4, v.startDate);
             stmt.setString(5, v.endDate);
             stmt.executeUpdate();
-            return true;
+
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
+            throw e;
         }
     }
 
