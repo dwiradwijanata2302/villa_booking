@@ -195,7 +195,6 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan daftar **semua re
 **`GET /villas/available?/checkin=YYYY-MM-DD&checkout=YYYY-MM-DD` – Melihat Pencarian ketersediaan vila berdasarkan tanggal check-in dan 
 checkout.**
 
-![Image](https://github.com/user-attachments/assets/02e56873-6ba4-4992-98dd-fff0dc15fc78)
 
 ![villa get available](https://github.com/user-attachments/assets/5c818d8b-e030-4eb1-a28b-45cadede7084)
 
