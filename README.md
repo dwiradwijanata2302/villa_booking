@@ -324,9 +324,9 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan **voucher** denga
 ![add voucher](https://github.com/user-attachments/assets/c0a18ba5-17c4-49c3-a8bf-0b8d06912706)
 
 
-
-Gambar di atas merupakan contoh implementasi untuk menambahkan voucher baru ke dalam sistem.
-Setelah request berhasil dikirim, sistem memberikan response dengan status 201 Created dan pesan "Voucher created" yang menandakan voucher telah berhasil dibuat.  
+Gambar di atas merupakan contoh untuk menambahkan voucher baru ke dalam sistem.  
+Setelah request berhasil dikirim, sistem memberikan response dengan status 201 Created dan pesan "voucher created" yang menandakan voucher telah berhasil dibuat.  
+ 
 ---
 
 **`PUT /vouchers/{id}` – Mengubah data suatu voucher**
