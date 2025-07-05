@@ -132,7 +132,21 @@ Silakan jalankan project melalui IDE seperti IntelliJ IDEA. Pastikan koneksi ke 
 ### Menjalankan via Postman
 Import file collection Postman atau buat request manual dengan metode, URL, dan JSON body sesuai dengan endpoint yang tersedia.  
 
-## Fitur API
+## Fitur API  
+CRUD Operations:  
+- CREATE (POST): Membuat data baru (voucher, customer, villa)
+- READ (GET): Mengambil data (semua data atau berdasarkan ID)
+- UPDATE (PUT): Mengubah data yang sudah ada
+- DELETE (DELETE): Menghapus data berdasarkan ID  
+HTTP Methods:  
+- GET - Mengambil data
+- POST - Membuat data baru
+- PUT - Mengupdate data
+- DELETE - Menghapus data
+Response Format:  
+- Success Response: JSON dengan data atau pesan sukses
+- Error Response: JSON dengan pesan error dan HTTP status code
+- Status Codes: 200 (OK), 201 (Created), 404 (Not Found), 500 (Server Error)  
 
 ### Endpoint Villa
 
