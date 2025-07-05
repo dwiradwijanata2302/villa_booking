@@ -69,7 +69,7 @@ public class VoucherRepository {
         }
     }
 
-    public boolean updateVoucher(Voucher v) {
+    public void updateVoucher(Voucher v) throws SQLException {
         String query = "UPDATE vouchers SET code=?, description=?, discount=?, start_date=?, end_date=? WHERE id=?";
         try (Connection conn = Database.getConnection(); PreparedStatement stmt = conn.prepareStatement(query)) {
 
@@ -80,23 +80,21 @@ public class VoucherRepository {
             stmt.setString(5, v.endDate);
             stmt.setInt(6, v.id);
             stmt.executeUpdate();
-            return true;
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
+            throw e;
         }
     }
 
-    public boolean deleteVoucher(int id) {
+    public void deleteVoucher(int id) throws SQLException {
         String query = "DELETE FROM vouchers WHERE id = ?";
         try (Connection conn = Database.getConnection(); PreparedStatement stmt = conn.prepareStatement(query)) {
 
             stmt.setInt(1, id);
             stmt.executeUpdate();
-            return true;
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
+            throw e;
         }
     }
 }
