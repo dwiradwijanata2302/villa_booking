@@ -336,7 +336,7 @@ Gambar diatas merupakan contoh implemantasi dimana menampilkan **voucher** denga
 ---
 
 **`POST /vouchers` – Menambahkan voucher baru**
-![add voucher](https://github.com/user-attachments/assets/c0a18ba5-17c4-49c3-a8bf-0b8d06912706)
+![post voucher](https://github.com/user-attachments/assets/4c4d1009-805c-4fe6-83d3-0edb03284f7d)
 
 
 Gambar di atas merupakan contoh untuk menambahkan voucher baru ke dalam sistem.  
